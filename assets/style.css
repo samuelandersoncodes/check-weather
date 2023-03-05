@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=PT+Sans+Caption:wght@700&display=swap');
+
+/* Generic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: 'PT Sans Caption', sans-serif;
+    color: green;
+}
