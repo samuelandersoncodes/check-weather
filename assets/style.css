@@ -11,3 +11,17 @@ body {
     font-family: 'PT Sans Caption', sans-serif;
     color: green;
 }
+
+/* Heading Styling */
+h1 {
+font-family: 'PT Sans Caption', sans-serif ;
+font-size: 160%;
+text-align: center;
+color: #26262693;
+}
+
+/* Font Awesome Icon Styling*/
+i {
+    color: #26262663;
+    font-size: 80%;
+}
