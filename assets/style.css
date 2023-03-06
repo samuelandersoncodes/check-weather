@@ -12,16 +12,42 @@ body {
     color: green;
 }
 
-/* Heading Styling */
+/* Heading Style */
 h1 {
-font-family: 'PT Sans Caption', sans-serif ;
-font-size: 160%;
-text-align: center;
-color: #26262693;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 160%;
+    text-align: center;
+    color: #26262693;
 }
 
 /* Font Awesome Icon Styling*/
 i {
     color: #26262663;
     font-size: 80%;
+}
+
+/* Flexbox container Styling*/
+#main {
+    display: flex;
+    border: 1px solid green;
+    margin: 7px auto;
+    padding: 4px;
+    height: 670px;
+    width: 30em;
+    border-radius: 8px;
+    box-shadow: 3px 2px 1.5px rgba(0, 128, 0, 0.489);
+}
+
+/* Media queries for medium and small screen sizes*/
+@media screen and (max-width:530px) {
+
+    #main {
+        width: 80%;
+        margin: 2px auto;
+    }
+
+    h1 {
+        padding: 0 7px;
+    }
+
 }
