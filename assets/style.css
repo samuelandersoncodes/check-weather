@@ -83,6 +83,14 @@ i {
     padding: 0.8rem;
 }
 
+/* Date placeholder Styling */
+#date-placeholder {
+    font-family: 'Noto Serif', serif;
+    font-size: 170%;
+    margin: 0.1rem auto;
+    text-align: center;
+}
+
 /* Media queries for medium and small screen sizes*/
 @media screen and (max-width:530px) {
 
