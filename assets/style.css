@@ -26,9 +26,8 @@ i {
     font-size: 80%;
 }
 
-/* Flexbox container Styling*/
+/* Main container Styling*/
 #main {
-    display: flex;
     border: 1px solid green;
     margin: 7px auto;
     padding: 14px 5px 1px;
@@ -76,8 +75,6 @@ i {
     background-color: #262626ce;
     cursor: pointer;
 }
-
-
 
 /* Media queries for medium and small screen sizes*/
 @media screen and (max-width:530px) {
