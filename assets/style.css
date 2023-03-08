@@ -95,15 +95,24 @@ i {
 #weather-description {
     font-family: 'Noto Serif', serif;
     font-size: 200%;
-    margin:3.2rem 1rem 0.1rem;
+    margin: 3.2rem 1rem 0.1rem;
     text-align: center;
 }
 
 /* Temperature placeholder Styling */
 #temperature {
     font-family: 'Noto Serif', serif;
-    font-size: 300%;   
+    font-size: 300%;
     text-align: center;
+}
+
+/* Weather elements placeholder Styling */
+#weather-elements {
+    font-family: 'Noto Serif', serif;
+    font-size: 160%;
+    margin: 5rem 0.3rem 0.3rem;
+    padding-left: 1.5rem;
+    float: right;
 }
 
 /* Media queries for medium and small screen sizes*/
