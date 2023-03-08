@@ -91,6 +91,14 @@ i {
     text-align: center;
 }
 
+/* Weather description placeholder Styling */
+#weather-description {
+    font-family: 'Noto Serif', serif;
+    font-size: 200%;
+    margin:3.2rem 1rem 0.1rem;
+    text-align: center;
+}
+
 /* Media queries for medium and small screen sizes*/
 @media screen and (max-width:530px) {
 
