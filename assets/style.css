@@ -99,6 +99,13 @@ i {
     text-align: center;
 }
 
+/* Temperature placeholder Styling */
+#temperature {
+    font-family: 'Noto Serif', serif;
+    font-size: 300%;   
+    text-align: center;
+}
+
 /* Media queries for medium and small screen sizes*/
 @media screen and (max-width:530px) {
 
