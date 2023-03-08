@@ -76,6 +76,13 @@ i {
     cursor: pointer;
 }
 
+/* City placeholder Styling */
+#city-placeholder {
+    font-family: 'Noto Serif', serif;
+    font-size: 180%;
+    padding: 0.8rem;
+}
+
 /* Media queries for medium and small screen sizes*/
 @media screen and (max-width:530px) {
 
