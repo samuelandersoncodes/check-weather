@@ -45,3 +45,18 @@ function formatDate(date) {
 let date = new Date();
 let dateElement = document.getElementById("date-placeholder");
 dateElement.innerHTML = formatDate(date);
+
+/**
+ * With the fetch method
+ * Gets weather from the openweathermap api
+ */
+let weather = {
+    apiKey: "dd9de2db37b425827a3d32ecdc9508d4",
+    fetchWeather: function (city) {
+        fetch(
+                `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.apiKey}&units=metric`
+            )
+            .then((response) => response.json())
+            .then((data) => console.log(data));
+    },
+};
