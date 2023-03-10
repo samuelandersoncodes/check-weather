@@ -98,3 +98,12 @@ let weather = {
         iconElement.setAttribute("alt", data.weather[0].icon);
     }
 };
+
+/**
+ * Default weather display
+ * before user enters a city
+ */
+function search(city){
+    weather.fetchWeather(city);
+}
+search('Dublin');
