@@ -47,6 +47,20 @@ let dateElement = document.getElementById("date-placeholder");
 dateElement.innerHTML = formatDate(date);
 
 /**
+ * Calls api data from the fetchWeather method for event listening
+ * when user enters a city
+ */
+function handleSubmit(event) {
+    event.preventDefault();
+    let cityInput = document.getElementById("city-input");
+    weather.fetchWeather(cityInput.value);
+  }
+  
+  // Event listener for the above function
+  let inputField = document.getElementById("input-field");
+  inputField.addEventListener("submit", handleSubmit);
+
+/**
  * With the fetch method
  * Gets weather from the openweathermap api
  */
