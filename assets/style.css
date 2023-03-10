@@ -9,7 +9,7 @@
 
 body {
     font-family: 'PT Sans Caption', sans-serif;
-    color: green;
+    color: #262625bc;
 }
 
 /* Heading Style */
@@ -28,13 +28,13 @@ i {
 
 /* Main container Styling*/
 #main {
-    border: 1px solid green;
+    border: 1px solid #262625bc;
     margin: 7px auto;
     padding: 14px 5px 1px;
     height: 670px;
     width: 30em;
     border-radius: 8px;
-    box-shadow: 3px 2px 1.5px rgba(0, 128, 0, 0.489);
+    box-shadow: 3px 2px 1.5px rgba(47, 64, 47, 0.395);
 }
 
 /* Input Styling */
@@ -68,7 +68,7 @@ i {
 
 /* Input hover Styling */
 #city-input:hover {
-    border: 2px solid green;
+    border: 2px solid rgba(47, 64, 47, 0.395);
 }
 
 #search-button:hover {
