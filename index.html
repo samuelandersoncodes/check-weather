@@ -25,9 +25,11 @@
         <!--Main container for all elements-->
         <div id="main">
             <!--City input-->
-            <div id="input-field">
-                <input type="text" name="city" id="city-input" placeholder="type in a city">
-                <input type="submit" value="search" id="search-button">
+            <div>
+                <form id="input-field">
+                    <input type="text" name="city" id="city-input" placeholder="type in a city">
+                    <input type="submit" value="search" id="search-button">
+                </form>
             </div>
             <!--City placeholder-->
             <div id="city-placeholder">
@@ -44,6 +46,10 @@
                     Cloudy ☁️
                 </h3>
             </div>
+            <!--Weather condition images placeholder-->
+            <div>
+                <img src="" alt="weather condition" id="icon">
+            </div>
             <!--Temperature placeholder-->
             <div id="temperature">
                 <h3>
@@ -54,19 +60,19 @@
             <div id="weather-elements">
                 <ul>
                     <li>
-                        <p>
+                        <p id="pressure">
                             Pressure :
                             <span></span> Pa
                         </p>
                     </li>
                     <li>
-                        <p>
+                        <p id="humidity">
                             Humidity :
                             <span></span> g.m-3
                         </p>
                     </li>
                     <li>
-                        <p>
+                        <p id="wind">
                             Wind Speed :
                             <span></span> km/hr
                         </p>

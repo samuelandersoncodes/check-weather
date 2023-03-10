@@ -57,6 +57,30 @@ let weather = {
                 `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.apiKey}&units=metric`
             )
             .then((response) => response.json())
-            .then((data) => console.log(data));
+            .then((data) => this.displayWeather(data));
     },
+    /**
+     * Weather elements
+     * Displays fetchted data onto the app 
+     */
+    displayWeather: function (data) {
+        // Get and store HTML elements into variables
+        let city = document.getElementById("city-placeholder")
+        let temp = document.getElementById("temperature");
+        let humidity = document.getElementById("humidity");
+        let wind = document.getElementById("wind");
+        let pressure = document.getElementById("pressure");
+        let description = document.getElementById("weather-description");
+        let iconElement = document.getElementById("icon");
+
+        // Inject fetched api data into the above variables' innerhtml
+        city.innerHTML = (data.name);
+        temp.innerHTML = Math.round(data.main.temp);
+        humidity.innerHTML = Math.round(data.main.humidity);
+        wind.innerHTML = Math.round(data.wind.speed);
+        pressure.innerHTML = Math.round(data.main.pressure);
+        description.innerHTML = data.weather[0].description;
+        iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+        iconElement.setAttribute("alt", data.weather[0].icon);
+    }
 };
