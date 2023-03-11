@@ -86,6 +86,7 @@ let weather = {
         let pressure = document.getElementById("pressure");
         let description = document.getElementById("weather-description");
         let iconElement = document.getElementById("icon");
+        let dateElement = document.getElementById("date-placeholder");
 
         // Inject fetched api data into the above variables' innerhtml
         city.innerHTML = (data.name);
@@ -96,6 +97,7 @@ let weather = {
         description.innerHTML = data.weather[0].description;
         iconElement.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
         iconElement.setAttribute("alt", data.weather[0].icon);
+        dateElement.innerHTML = formatDate(data.dt * 1000);
     }
 };
 
@@ -107,3 +109,5 @@ function search(city){
     weather.fetchWeather(city);
 }
 search('Dublin');
+
+
