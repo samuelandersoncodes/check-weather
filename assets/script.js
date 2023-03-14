@@ -110,4 +110,27 @@ function search(city){
 }
 search('Dublin');
 
+/**
+ * Breaks out latitude and longitude coordinates
+ * once it gets the location from the geolocation API
+ * and parses it to the getForecast function 
+ */
+let gotPosition = function (pos) {
+  let lat = pos.coords.latitude;
+  let lon = pos.coords.longitude;
+  getForecast(lat, lon);
+}
 
+/**
+ * Recieves the above coordinates into the openweathermap API url 
+ */
+let getForecast = function (lat, lon) {
+  let url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=dd9de2db37b425827a3d32ecdc9508d4`
+  getWeatherText(url);
+}
+
+/* 
+Uses the geolocation library to run the getCurrentPosition method
+And calls the gotPosition function when position is available
+*/
+navigator.geolocation.getCurrentPosition(gotPosition);
