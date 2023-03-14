@@ -123,10 +123,21 @@ let gotPosition = function (pos) {
 
 /**
  * Recieves the above coordinates into the openweathermap API url 
+ * parses it to the getWeatherText async function
  */
 let getForecast = function (lat, lon) {
   let url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=dd9de2db37b425827a3d32ecdc9508d4`
   getWeatherText(url);
+}
+
+/**
+ * Fetches the openweathermap api data asyncronously
+ * and parses it to the parseWeather function 
+ */
+async function getWeatherText(url) {
+  let weatherObject = await fetch(url);
+  let weatherText = await weatherObject.text();
+  parseWeather(weatherText);
 }
 
 /* 
