@@ -189,6 +189,22 @@ let displayWeatherDay = function (dayOfWeek, description, icon, highTemp, lowTem
   document.getElementById("forecast").innerHTML += out;
 }
 
+/**
+ * An array for the chronological loop through the days of the week
+ */
+let getDayOfWeek = function (dayNum) {
+  var weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+
+  return (weekday[dayNum]);
+}
+
 /* 
 Uses the geolocation library to run the getCurrentPosition method
 And calls the gotPosition function when position is available
