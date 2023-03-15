@@ -168,8 +168,8 @@ let parseWeather = function (weatherText) {
     let dayOfWeek = getDayOfWeek(today);
     let description = day.weather[0].description;
     let icon = day.weather[0].icon;
-    let highTemp = day.main.temp_max;
-    let lowTemp = day.main.temp_min;
+    let highTemp = kelvinToCelsius(day.main.temp_max);
+    let lowTemp = kelvinToCelsius(day.main.temp_min);
     let windSpeed = day.wind.speed;
 
     displayWeatherDay(dayOfWeek, description, icon, highTemp, lowTemp, windSpeed);
@@ -204,6 +204,14 @@ let getDayOfWeek = function (dayNum) {
   weekday[6] = "Saturday";
 
   return (weekday[dayNum]);
+}
+
+/**
+ *  Converts kelvin min and max temperatures into celsius
+ */
+let kelvinToCelsius = function (kelvinTemp) {
+  const celsius = kelvinTemp - 273;
+  return Math.round(celsius)
 }
 
 /* 
