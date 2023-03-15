@@ -184,8 +184,8 @@ let displayWeatherDay = function (dayOfWeek, description, icon, highTemp, lowTem
   let out = "<div class='weatherDay'><img src='https://openweathermap.org/img/wn/" + icon + ".png'/>";
   out += "<h2>" + dayOfWeek + "</h2>";
   out += "<h3>" + description + "</h3>";
-  out += "<p>High Temperature: " + highTemp + "°C" + "</p>";
-  out += "<p>Low Temperature: " + lowTemp + "°C" + "</p>";
+  out += "<p>Max temp: " + highTemp + "°C" + "</p>";
+  out += "<p>Min temp: " + lowTemp + "°C" + "</p>";
   out += "<p>Wind speed: " + Math.round(windSpeed) + "km/h" + "</p></div>";
   document.getElementById("forecast").innerHTML += out;
 }
