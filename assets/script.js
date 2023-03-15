@@ -160,7 +160,8 @@ let parseWeather = function (weatherText) {
     let day = dailyForecast[i]
     let today = new Date().getDay() + i;
     if (today > 6) {
-      today = today - 7;
+      today -= 7;
+      break;
     }
 
     // Specific json data stored into variables
