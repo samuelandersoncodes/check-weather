@@ -145,10 +145,17 @@ async function getWeatherText(url) {
  * stores it in the dailyForecast variable 
  * and loops through it 
  * extracting the needed data into variables 
+ * and parsed into the displayWeatherDay fuction
  */
 let parseWeather = function (weatherText) {
+
+  // Converts data into json
   let weatherJSON = JSON.parse(weatherText);
+
+  // Stores needed json data
   let dailyForecast = weatherJSON.list;
+
+  // Loops through daily forecast data
   for (i = 0; i < dailyForecast.length; i++) {
     let day = dailyForecast[i]
     let today = new Date().getDay() + i;
@@ -156,13 +163,30 @@ let parseWeather = function (weatherText) {
       today = today - 7;
     }
 
+    // Specific json data stored into variables
     let dayOfWeek = getDayOfWeek(today);
     let description = day.weather[0].description;
     let icon = day.weather[0].icon;
     let highTemp = day.main.temp_max;
     let lowTemp = day.main.temp_min;
     let windSpeed = day.wind.speed;
+
+    displayWeatherDay(dayOfWeek, description, icon, highTemp, lowTemp, windSpeed);
   }
+}
+
+/**
+ * Displayed daily weather forecast elements 
+ * Injects the various specific data into the HTML dynamically
+ */
+let displayWeatherDay = function (dayOfWeek, description, icon, highTemp, lowTemp, windSpeed) {
+  let out = "<div class='weatherDay'><img src='https://openweathermap.org/img/wn/" + icon + ".png'/>";
+  out += "<h2>" + dayOfWeek + "</h2>";
+  out += "<h3>" + description + "</h3>";
+  out += "<p>High Temperature: " + highTemp + "°C" + "</p>";
+  out += "<p>Low Temperature: " + lowTemp + "°C" + "</p>";
+  out += "<p>Wind speed: " + Math.round(windSpeed) + "km/h" + "</p></div>";
+  document.getElementById("forecast").innerHTML += out;
 }
 
 /* 
