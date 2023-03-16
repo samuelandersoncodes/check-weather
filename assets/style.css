@@ -31,8 +31,7 @@ i {
     border: 1px solid #262625bc;
     margin: 7px auto;
     padding: 14px 5px 1px;
-    height: 670px;
-    width: 30em;
+    width: 36em;
     border-radius: 8px;
     box-shadow: 3px 2px 1.5px rgba(47, 64, 47, 0.395);
 }
@@ -79,8 +78,8 @@ i {
 /* City placeholder Styling */
 #city-placeholder {
     font-family: 'Noto Serif', serif;
-    font-size: 180%;
-    margin: 20px 10px 20px 19px;
+    font-size: 190%;
+    margin: 10px 8px 8px 20px;
 }
 
 /* Date placeholder Styling */
@@ -95,24 +94,53 @@ i {
 #weather-description {
     font-family: 'Noto Serif', serif;
     font-size: 200%;
-    margin: 3.2rem 1rem 0.1rem;
+    display: block;
+}
+
+/* Description, temperature, icon and image container  Styling */
+#temp-desc-icon {
     text-align: center;
 }
 
-/* Temperature placeholder Styling */
-#temperature {
-    font-family: 'Noto Serif', serif;
+/* Description, temperature, icon and image class  Styling */
+.core-elements {
+    display: inline-block;
+}
+
+/* Temperature container Styling */
+#temp-box {
+    position: relative;
     font-size: 300%;
-    text-align: center;
+    bottom: 35px;
+}
+
+/* Temperature unit Styling */
+#temp-unit {
+    position: relative;
+    font-size: 50%;
+    bottom: 16px;
+    right: 11px;
 }
 
 /* Weather elements placeholder Styling */
 #weather-elements {
     font-family: 'Noto Serif', serif;
-    font-size: 160%;
-    margin: 5rem 0.3rem 0.3rem;
+    font-size: 120%;
+    margin: 0 0.3rem 1rem;
     padding-left: 1.5rem;
     float: right;
+    position: relative;
+    bottom: 35px;
+}
+
+/* Weekly weather forecast Styling */
+#forecast {
+    display: flex;
+    justify-content: space-evenly;
+    clear: both;
+    text-align: center;
+    font-size: 110%;
+    margin: 0.7rem auto;
 }
 
 /* Media queries for medium and small screen sizes*/
