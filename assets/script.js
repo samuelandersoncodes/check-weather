@@ -126,7 +126,7 @@ let gotPosition = function (pos) {
  * parses it to the getWeatherText async function
  */
 let getForecast = function (lat, lon) {
-  let url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=dd9de2db37b425827a3d32ecdc9508d4`
+  let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=2ff29bed3181c3526c35cc5408037f85`
   getWeatherText(url);
 }
 
@@ -153,24 +153,23 @@ let parseWeather = function (weatherText) {
   let weatherJSON = JSON.parse(weatherText);
 
   // Stores needed json data
-  let dailyForecast = weatherJSON.list;
+  let dailyForecast = weatherJSON.daily;
 
   // Loops through daily forecast data
   for (i = 0; i < dailyForecast.length; i++) {
-    let day = dailyForecast[i]
+    let day = dailyForecast[i];
     let today = new Date().getDay() + i;
     if (today > 6) {
       today -= 7;
-      break;
     }
 
     // Specific json data stored into variables
     let dayOfWeek = getDayOfWeek(today);
     let description = day.weather[0].description;
     let icon = day.weather[0].icon;
-    let highTemp = kelvinToCelsius(day.main.temp_max);
-    let lowTemp = kelvinToCelsius(day.main.temp_min);
-    let windSpeed = day.wind.speed;
+    let highTemp = kelvinToCelsius(day.temp.max);
+    let lowTemp = kelvinToCelsius(day.temp.min);
+    let windSpeed = day.wind_speed;
 
     displayWeatherDay(dayOfWeek, description, icon, highTemp, lowTemp, windSpeed);
   }
