@@ -122,6 +122,11 @@ i {
     right: 11px;
 }
 
+/* Temperature unit decoration Styling */
+a {
+    text-decoration: none;
+} 
+
 /* Weather elements placeholder Styling */
 #weather-elements {
     font-family: 'Noto Serif', serif;
