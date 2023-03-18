@@ -87,6 +87,7 @@ let weather = {
     let description = document.getElementById("weather-description");
     let iconElement = document.getElementById("icon");
     let dateElement = document.getElementById("date-placeholder");
+    celsiusTemperature = data.main.temp;
 
     // Inject fetched api data into the above variables' innerhtml
     city.innerHTML = (data.name);
@@ -209,9 +210,49 @@ let getDayOfWeek = function (dayNum) {
  *  Converts kelvin min and max temperatures into celsius
  */
 let kelvinToCelsius = function (kelvinTemp) {
-  const celsius = kelvinTemp - 273;
+  let celsius = kelvinTemp - 273;
   return Math.round(celsius)
 }
+
+/**
+ * Current temperature display units
+ * fahrenheit conversion link
+ * converts celsius temperature into fahrenheit
+ */
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.getElementById("temperature");
+  // activates fahrenheit on click
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  //converts celsius to fahrenheit 
+  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
+  // Rounds coverted unit and feeds it to innerhtml 
+  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
+}
+
+/**
+ * Current temperature display units
+ * celsius conversion link
+ * converts fahrenheit unit back to celsius on click
+ */
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  // resets to celsius unit on click
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  // Rounds celsius temperature from displayWeather function and feeds it to the innerhtml
+  let temperatureElement = document.getElementById("temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+// Listens for the on the fahrenheit link for conversion execution
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+// Listens for the on the celsius link to bing back default unit
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 /* 
 Uses the geolocation library to run the getCurrentPosition method
