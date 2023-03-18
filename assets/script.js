@@ -155,13 +155,12 @@ let parseWeather = function (weatherText) {
   let dailyForecast = weatherJSON.daily;
 
   // Loops through daily forecast data
-  for (i = 0; i < dailyForecast.length; i++) {
+  for (i = 0; i < 5; i++) {
     let day = dailyForecast[i];
     let today = new Date().getDay() + i;
     if (today > 6) {
       today -= 7;
     }
-
     // Specific json data stored into variables
     let dayOfWeek = getDayOfWeek(today);
     let description = day.weather[0].description;
