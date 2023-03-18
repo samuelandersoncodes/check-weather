@@ -50,6 +50,7 @@ i {
     padding: 5px 3px 4px 8px;
 }
 
+/* Search button Styling */
 #search-button {
     background-color: #262626ad;
     color: #fafafa;
@@ -61,8 +62,15 @@ i {
     width: 27%;
 }
 
+/* Input placeholder Styling */
 ::placeholder {
     text-align: center;
+}
+
+/* Input placeholder text Styling */
+input[type="text"] {
+font-size: 110%;
+letter-spacing: 1.5px;
 }
 
 /* Input hover Styling */
@@ -70,6 +78,7 @@ i {
     border: 2px solid rgba(47, 64, 47, 0.395);
 }
 
+/* Search button hover Styling */
 #search-button:hover {
     background-color: #262626ce;
     cursor: pointer;
