@@ -1,3 +1,15 @@
+// Event listener for the handleSubmit function
+let inputField = document.getElementById("input-field");
+inputField.addEventListener("submit", handleSubmit);
+
+// Listens for the fahrenheit link for conversion execution
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+// Listens for the celsius link to bring back default unit
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
 /**
  * Displayed date on the app
  * Gets and formats days, months and year 
@@ -55,10 +67,6 @@ function handleSubmit(event) {
   let cityInput = document.getElementById("city-input");
   weather.fetchWeather(cityInput.value);
 }
-
-// Event listener for the above function
-let inputField = document.getElementById("input-field");
-inputField.addEventListener("submit", handleSubmit);
 
 /**
  * With the fetch method
@@ -242,14 +250,6 @@ function displayCelsiusTemperature(event) {
   let temperatureElement = document.getElementById("temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
-
-// Listens for the on the fahrenheit link for conversion execution
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-// Listens for the on the celsius link to bing back default unit
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 /* 
 Uses the geolocation library to run the getCurrentPosition method
