@@ -163,12 +163,12 @@ a {
     text-align: center;
     color: #fafafa;
     font-family: 'Noto Serif', serif;
-    font-size: 110%;
+    font-size: 115%;
     font-weight: bolder;
     background: #262626ad;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
-    padding: 2px;
+    padding: 4px 7px 5px 3px;
     max-width: 100%;
     z-index: 3;
 }
