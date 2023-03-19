@@ -69,8 +69,8 @@ i {
 
 /* Input placeholder text Styling */
 input[type="text"] {
-font-size: 110%;
-letter-spacing: 1.5px;
+    font-size: 110%;
+    letter-spacing: 1.5px;
 }
 
 /* Input hover Styling */
@@ -134,7 +134,7 @@ letter-spacing: 1.5px;
 /* Temperature unit decoration Styling */
 a {
     text-decoration: none;
-} 
+}
 
 /* Weather elements placeholder Styling */
 #weather-elements {
@@ -174,15 +174,20 @@ a {
 }
 
 /* Media queries for medium and small screen sizes*/
-@media screen and (max-width:530px) {
+@media screen and (max-width:650px) {
 
     #main {
-        width: 80%;
-        margin: 2px auto;
+        width: 90%;
+        margin: 15px auto;
     }
+
+}
+
+@media screen and (max-width:530px) {
 
     h1 {
         padding: 0 7px;
     }
 
 }
+
