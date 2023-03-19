@@ -147,6 +147,12 @@ a {
     bottom: 35px;
 }
 
+/* Weather condition icon Styling */
+#icon {
+    height: 60%;
+    width: 7.5rem;
+}
+
 /* Weekly weather forecast Styling */
 #forecast {
     display: flex;
