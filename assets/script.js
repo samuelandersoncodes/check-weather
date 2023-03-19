@@ -186,10 +186,10 @@ let parseWeather = function (weatherText) {
  * Injects the various specific data into the HTML dynamically
  */
 let displayWeatherDay = function (dayOfWeek, description, icon, highTemp, lowTemp, windSpeed) {
-  let out = `<div class='weatherDay'><img src='https://openweathermap.org/img/wn/${icon}.png' 
-  alt='weekly weather forecast icons'/>
+  let out = `<div class='weatherDay'>
   <h3>${dayOfWeek}</h3>
- <p>${description}</p>
+  <img src='https://openweathermap.org/img/wn/${icon}.png' 
+  alt='weekly weather forecast icons'/>
   <p>Max: ${highTemp}°<small>C</small></p>
   <p>Min: ${lowTemp}°<small>C</small></p>
   <small>Wind: ${Math.round(windSpeed)} km/h</small></div>`;
@@ -205,7 +205,7 @@ let getDayOfWeek = function (dayNum) {
   weekday[1] = "Mon";
   weekday[2] = "Tue";
   weekday[3] = "Wed";
-  weekday[4] = "Thur";
+  weekday[4] = "Thu";
   weekday[5] = "Fri";
   weekday[6] = "Sat";
 
