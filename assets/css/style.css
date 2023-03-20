@@ -28,7 +28,8 @@ i {
 
 /* Main container Styling*/
 #main {
-    border: 1px solid #262625bc;
+    background-color: #66636255;
+    border: 1px solid #2626258c;
     margin: 7px auto;
     padding: 14px 5px 5px;
     width: 36em;
