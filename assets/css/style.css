@@ -9,7 +9,7 @@
 
 body {
     font-family: 'PT Sans Caption', sans-serif;
-    color: #262625bc;
+    color: #262625f6;
 }
 
 /* Heading Style */
@@ -28,7 +28,7 @@ i {
 
 /* Main container Styling*/
 #main {
-    background-color: #66636255;
+    background-color: #6663622c;
     border: 1px solid #2626258c;
     margin: 7px auto;
     padding: 14px 5px 5px;
