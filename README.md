@@ -55,6 +55,25 @@ View the live web application [here] (https://samuelandersoncodes.github.io/chec
 
 * As a future enhancement, the city input field will be connected to the weekly weather forecast section so that users can look for other citys' forecast as well. It will be considered to also add two more forecast days adding up to seven instead of just five days.
 
+## Design
 
+### Wireframes
+<br>
+Desktop version
+<br><br>
+
+![Desktop Version](docs/readme_images/balsamiq_desktop_wireframe.PNG)
+
+<br><br>
+Tablet Version
+<br><br>
+
+![Tablet Version](docs/readme_images/balsamiq_tablet_wireframe.PNG)
+
+<br><br>
+Phone Version
+<br><br>
+
+![Phone Version](docs/readme_images/balsamiq_phone_wireframe.PNG)
 
  
