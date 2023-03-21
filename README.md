@@ -76,4 +76,48 @@ Phone Version
 
 ![Phone Version](docs/readme_images/balsamiq_phone_wireframe.PNG)
 
+<br><br>
+## Testing 
+
+### Responsiveness
+
+The web application was tested to ensure responsiveness on screen sizes of 320px and above as defined in [WCAG 2.1 Reflow criteria for responsive design](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html) on Safari, Chrome, Edge, Firefox and Opera browsers.
+
+Steps to test:
+
+1. Open browser and navigate to [Check Weather](https://samuelandersoncodes.github.io/check-weather/)
+2. Open the developer tools by right clicking or tapping the F12 key and click on inspect.
+3. Set to responsive and decrease width to 320px
+4. Set the zoom to 50%
+5. Click and drag the responsive window to maximum width
+
+* Expected;
+
+The web application is responsive on all screen sizes and no icons or elements are pixelated or stretched.
+No horizontal scroll is present.
+No elements overlap.
+
+* Actual;
+
+The web application works exactly as expected.
+
+The web application was opened on the following devices and no responsive issues were found;
+
+- Huawei mipad 10
+- Iphone 10
+- Iphone 12 Xs max
+- Iphone 12
+- Iphone 13
+- Iphone 6S plus
+- Xiomi Redme 11 pro
+- Samsung A 12
+- Samsung Galaxy 20
+- Samsung Galaxy Tab S7
+- Infinix Hot 10
+- Infinix Hot 12
+- Asus Sonicmaster
+- Hp EliteBook 8440p
+- Hp laptop 14s
+
+
  
