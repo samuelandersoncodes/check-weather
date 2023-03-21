@@ -51,5 +51,10 @@ View the live web application [here] (https://samuelandersoncodes.github.io/chec
 
 ![Weekly weather forecast section](docs/readme_images/weekly_weather_forecast.jpg)
 
+### Features Left to Implement
+
+* As a future enhancement, the city input field will be connected to the weekly weather forecast section so that users can look for other citys' forecast as well. It will be considered to also add two more forecast days adding up to seven instead of just five days.
+
+
 
  
