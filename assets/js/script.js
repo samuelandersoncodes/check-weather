@@ -81,13 +81,14 @@ let weather = {
       .then((response) => response.json())
       .then((data) => this.displayWeather(data));
   },
+
   /**
    * Weather elements
    * Displays fetchted data onto the app 
    */
   displayWeather: function (data) {
     // Get and store HTML elements into variables
-    let city = document.getElementById("city-placeholder")
+    let city = document.getElementById("city-placeholder");
     let temp = document.getElementById("temperature");
     let humidity = document.getElementById("humidity");
     let wind = document.getElementById("wind");
@@ -115,6 +116,8 @@ let weather = {
 function search(city) {
   weather.fetchWeather(city);
 }
+
+// Sets the current weather to the default city (Dublin)
 search('Dublin');
 
 /**
@@ -126,16 +129,16 @@ let gotPosition = function (pos) {
   let lat = pos.coords.latitude;
   let lon = pos.coords.longitude;
   getForecast(lat, lon);
-}
+};
 
 /**
  * Recieves the above coordinates into the openweathermap API url 
  * parses it to the getWeatherText async function
  */
 let getForecast = function (lat, lon) {
-  let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=2ff29bed3181c3526c35cc5408037f85`
+  let url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=2ff29bed3181c3526c35cc5408037f85`;
   getWeatherText(url);
-}
+};
 
 /**
  * Fetches the openweathermap api data asyncronously
@@ -155,15 +158,13 @@ async function getWeatherText(url) {
  * and parsed into the displayWeatherDay fuction
  */
 let parseWeather = function (weatherText) {
-
   // Converts data into json
   let weatherJSON = JSON.parse(weatherText);
-
   // Stores needed json data
   let dailyForecast = weatherJSON.daily;
 
   // Loops through daily forecast data
-  for (i = 0; i < 5; i++) {
+  for (let i = 0; i < 5; i++) {
     let day = dailyForecast[i];
     let today = new Date().getDay() + i;
     if (today > 6) {
@@ -171,21 +172,20 @@ let parseWeather = function (weatherText) {
     }
     // Specific json data stored into variables
     let dayOfWeek = getDayOfWeek(today);
-    let description = day.weather[0].description;
     let icon = day.weather[0].icon;
     let highTemp = kelvinToCelsius(day.temp.max);
     let lowTemp = kelvinToCelsius(day.temp.min);
     let windSpeed = day.wind_speed;
-
-    displayWeatherDay(dayOfWeek, description, icon, highTemp, lowTemp, windSpeed);
+    // Parses stored data in the above variables into the function below as arguments 
+    displayWeatherDay(dayOfWeek, icon, highTemp, lowTemp, windSpeed);
   }
-}
+};
 
 /**
  * Displayed daily weather forecast elements 
  * Injects the various specific data into the HTML dynamically
  */
-let displayWeatherDay = function (dayOfWeek, description, icon, highTemp, lowTemp, windSpeed) {
+let displayWeatherDay = function (dayOfWeek, icon, highTemp, lowTemp, windSpeed) {
   let out = `<div class='weatherDay'>
   <h3>${dayOfWeek}</h3>
   <img src='https://openweathermap.org/img/wn/${icon}.png' 
@@ -194,7 +194,7 @@ let displayWeatherDay = function (dayOfWeek, description, icon, highTemp, lowTem
   <h4>&nbsp; Min: ${lowTemp}°<small>C</small></h4>
   <small>&nbsp; Wind: ${Math.round(windSpeed)}km/h</small></div>`;
   document.getElementById("forecast").innerHTML += out;
-}
+};
 
 /**
  * An array for the chronological loop through the days of the week
@@ -210,15 +210,15 @@ let getDayOfWeek = function (dayNum) {
   weekday[6] = "Sat";
 
   return (weekday[dayNum]);
-}
+};
 
 /**
  *  Converts kelvin min and max temperatures into celsius
  */
 let kelvinToCelsius = function (kelvinTemp) {
   let celsius = kelvinTemp - 273;
-  return Math.round(celsius)
-}
+  return Math.round(celsius);
+};
 
 /**
  * Current temperature display units
@@ -251,6 +251,9 @@ function displayCelsiusTemperature(event) {
   let temperatureElement = document.getElementById("temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
+// Defines celsius temperature as a global variable 
+let celsiusTemperature;
 
 /* 
 Uses the geolocation library to run the getCurrentPosition method
