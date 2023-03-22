@@ -190,8 +190,8 @@ let displayWeatherDay = function (dayOfWeek, description, icon, highTemp, lowTem
   <h3>${dayOfWeek}</h3>
   <img src='https://openweathermap.org/img/wn/${icon}.png' 
   alt='weekly weather forecast icons'/>
-  <p>&nbsp; Max: ${highTemp}°<small>C</small></p>
-  <p>&nbsp; Min: ${lowTemp}°<small>C</small></p>
+  <h4>&nbsp; Max: ${highTemp}°<small>C</small></h4>
+  <h4>&nbsp; Min: ${lowTemp}°<small>C</small></h4>
   <small>&nbsp; Wind: ${Math.round(windSpeed)}km/h</small></div>`;
   document.getElementById("forecast").innerHTML += out;
 }
