@@ -137,5 +137,9 @@ The test was aimed at ensuring the following criteria were met:
 
 Manual tests were also performed to ensure the web application is accessible as possible.
 
+### Lighthouse Testing
+
+![Lighthouse report](docs/testing_images/lighthouse_report_checkweather.jpg)
+
 
  
