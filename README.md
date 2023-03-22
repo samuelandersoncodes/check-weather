@@ -141,5 +141,118 @@ Manual tests were also performed to ensure the web application is accessible as 
 
 ![Lighthouse report](docs/testing_images/lighthouse_report_checkweather.jpg)
 
+### Functional Testing
+
+**Form Testing**
+
+The form on the web application was tested to ensure it functioned as expected. Both correct data and incorrect data as well as an empty field submission were tested. The following test scenarios were covered:
+
+* Scenario One - Correct Input data;
+
+Steps to test:
+
+1. Navigate to [Check Weather](https://samuelandersoncodes.github.io/check-weather/)
+2. Type in a valid city name:
+3. Click on the "search" button. 
+4. The current weather condition of the particular searched city is fully displayed on the central part of the web application with the corresponding city name.
+
+Expected:
+
+Form submits with no warnings or errors.
+
+Actual:
+
+The web application behaved as expected with no errors or warnings.
+
+* Scenario Two - Submitting an empty Field;
+
+Steps to test:
+
+1. Navigate to [Check Weather](https://samuelandersoncodes.github.io/check-weather/)
+2. Leave the input field empty:
+3. Click on the "search" button. 
+4. There is a (please fill out this field) notification. 
+
+Expected:
+
+The form does not submit but prompts the user to fill out the field.
+
+Actual:
+
+The web application behaved as expected, the error alert message was displayed and the form did not submit.
+
+* Scenario Three - Submitting a non-city name;
+
+Steps to test:
+
+1. Navigate to [Check Weather](https://samuelandersoncodes.github.io/check-weather/)
+2. Type in a non-city name like 'food':
+3. Click on the "search" button. 
+4. The form does not submit. 
+
+Expected:
+
+The form does not submit.
+
+Actual:
+
+The web application behaved as expected, the form did not submit.
+
+**Weekly forecast section**
+
+The weekly forecast section was tested to ensure it functioned as expected. In a scenario where location was allowed and in another scenario where location was blocked were tested. In a case where a user has the browser's location already turned on was also tested. The following test scenarios were covered:
+
+* Scenario One - location was allowed;
+
+Steps to test:
+
+1. Navigate to [Check Weather](https://samuelandersoncodes.github.io/check-weather/)
+2. Click on allow on the location pop up.
+3. The weekly weather forecast section opens alongside the current weather section. 
+
+
+Expected:
+The weekly weather forecast section opens alongside the current weather section.
+
+Actual:
+
+Behavior was as expected. 
+
+* Scenario Two - location was not allowed;
+
+Steps to test:
+
+* Steps to test the weekly forecast section
+1. Navigate to [Check Weather](https://samuelandersoncodes.github.io/check-weather/)
+2. Click on 'block' on the location pop up.
+3. The weekly weather forecast section does not open alongside the current weather section. 
+
+Expected:
+The weekly weather forecast section does not open alongside the current weather section.
+
+Actual:
+
+Behavior was as expected. 
+
+* Scenario Three - location was already on;
+
+Steps to test:
+
+1. Turn on Browser location
+2. Navigate to [Check Weather](https://samuelandersoncodes.github.io/check-weather/)
+3. The weekly weather forecast section opens automatically alongside the current weather section. 
+
+
+Expected:
+
+The weekly weather forecast section opens alongside the current weather section automatically without a notification popup.
+
+Actual:
+
+Behavior was as expected. 
+
+
+
+
 
  
