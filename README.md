@@ -251,6 +251,27 @@ Actual:
 
 Behavior was as expected. 
 
+**Celsius and Fahrenheit Conversion**
+
+The celsius and fahrenheit units conversion were also tested to ensure it did the right conversion. 
+
+Steps to test:
+
+1. Navigate to [Check Weather](https://samuelandersoncodes.github.io/check-weather/)
+2. Click or tap on the fahrenheit link.
+3. The unit converts to fahrenheit correctly. 
+4. Click or tap the celsius link.
+5. The units returns to its default celsius unit.
+
+Expected:
+
+Celsius converts smoothly and correctly into fahrenheit upon a click or tap. Fahrenheit converts back to the default celsius unit upon a click or tap.
+
+Actual:
+
+The web application behaved as expected with no errors or warnings.
+
+ 
 
 
 
