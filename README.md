@@ -286,7 +286,7 @@ The web application behaved as expected with no errors or warnings.
   - No errors were returned when passing through the official [JSHint validator](https://jshint.com/)
   - However, a warning shows that async functions are only available in ES8. This warning persists since JSHint does not feature ECMAScript 8.  
   
-![JSHint validator](docs/testing_images/jshint_javascript_validation.jpg)
+![JSHint validator](docs/testing_images/jshint_validator.JPG)
 
 ### Unfixed Bugs
 Not necessarily a bug but a JSHint warning that is beyond control. The warning states that 'async functions are only available in ES8.' I employ a modern way to fetch data and therefore find it necessary to use the asynchronous function which unfortunately does not feature on the JSHint validator.
