@@ -340,9 +340,17 @@ This is the live link ; https://samuelandersoncodes.github.io/check-weather/
 <br><br>
 
 * Persons
-    * A big appreciation to Gareth Mcgirr who inspired, motivated and mentored me throughout the project especially for best practices.
+    * A big appreciation to Gareth Mcgirr who inspired and mentored me throughout the project especially for best practices.
     
     * I thank Olena Olkhovyk for inspiring me and giving me the color styling ideas.
+
+### Content 
+
+All the content with the exception of those listed in the Media and credits sections of this document were originaly made by Samuel Anderson.
+
+### Media
+  
+The weather icons were imported from https://openweathermap.org/ and the icon in front of the main heading is from font awesome. 
 
  
 
