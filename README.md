@@ -328,6 +328,9 @@ This is the live link ; https://samuelandersoncodes.github.io/check-weather/
 * [Code Institute](https://github.com/Code-Institute-Org/gitpod-full-template)
   * I appreciate Code institute's support and their gitpod template.
 
+* [Openweathermap](https://openweathermap.org/)
+    * All weather data was fetched from the openweathermap api.
+
 * [Font Awesome](https://fontawesome.com/icons)
     * Code was used from this website to create the heading icons that come right before the web application's main heading.
     * Styles were changed to suit styling on the Web application.
