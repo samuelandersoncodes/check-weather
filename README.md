@@ -1,9 +1,10 @@
 # Check Weather
 
-> Check Weather is a web application that enables users all over the world to check the current weather of a perticular city by typing the name of the city and clicking on search.
+> Check Weather is a web application that enables users all over the world to check the current weather of a particular city by typing the name of the city and clicking on search. It also provides by default a five-day weekly forecast in the lower section. 
+The app  has two sections. The first section allows users to check for current weather in any city.
 
-> The web application by default provides users with a five-day weekly forecast of weather codition, wind speed, maximum and minimum temperatures in the lower section.
-This forecast starts right from the current day. Thus, unless a user is looking for a different city's current weather, he or she can easily find the weather in his or her city without a search.
+> While the lower section only provides users with a five-day weekly forecast of a weather codition icon, wind speed, maximum and minimum temperatures only in their exact location. This forecast starts right from the current day through to the next five days.
+Thus, unless a user is looking for a different city's current weather, he or she can easily find the weather at his or her location without a search.
 View the live web application [here] (https://samuelandersoncodes.github.io/check-weather/) 
 
 ![mockup](docs/readme_images/weather_app_mockup.jpg)
