@@ -323,6 +323,27 @@ The following git commands were used throughout the development to push code to 
 
 This is the live link ; https://samuelandersoncodes.github.io/check-weather/ 
 
+## Credits 
+
+* [Code Institute](https://github.com/Code-Institute-Org/gitpod-full-template)
+  * I appreciate Code institute's support and their gitpod template.
+
+* [Font Awesome](https://fontawesome.com/icons)
+    * Code was used from this website to create the heading icons that come right before the web application's main heading.
+    * Styles were changed to suit styling on the Web application.
+
+* [Google Fonts](https://fonts.google.com/)
+    * The fonts (PT Sans Caption and Noto Serif) used on this web application were imported from google fonts.
+
+* [Youtube Geolocation Tutorial](https://www.youtube.com/watch?v=JdJ2VBbYYTQ)
+    * The geolocation aspect of the application was inspired by this video. 
+<br><br>
+
+* Persons
+    * A big appreciation to Gareth Mcgirr who inspired, motivated and mentored me throughout the project especially for best practices.
+    
+    * I thank Olena Olkhovyk for inspiring me and giving me the color styling ideas.
+
  
 
 
