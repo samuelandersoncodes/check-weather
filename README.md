@@ -271,6 +271,23 @@ Actual:
 
 The web application behaved as expected with no errors or warnings.
 
+### Validator Testing 
+* HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
+
+![HTML Validator Results](docs/testing_images/html_validator_%20results.jpg)
+
+* CSS
+  - No errors were returned when passing through the official [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
+  
+![CSS Validator Results](docs/testing_images/css_validator_results.jpg)
+
+* Javascript
+  - No errors were returned when passing through the official [JSHint validator](https://jshint.com/)
+  - However, a warning shows that async functions are only available in ES8. This warning persists since JSHint does not feature ECMAScript 8.  
+  
+![JSHint validator](docs/testing_images/jshint_javascript_validation.jpg)
+
  
 
 
