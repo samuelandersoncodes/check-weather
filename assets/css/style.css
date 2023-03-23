@@ -124,6 +124,17 @@ input[type="text"] {
     bottom: 35px;
 }
 
+#temp-box .active {
+    color: #262625;
+    cursor: default;
+}
+
+/* Temperature unit hover Styling */
+#temp-box .active:hover {
+    text-decoration: overline;
+    width: 50%;
+}
+
 /* Temperature unit Styling */
 #temp-unit {
     position: relative;
@@ -176,11 +187,11 @@ a {
 
 /* Weekly weather forecast header Styling */
 #forecast-header {
-clear: both;
-text-align: center;
-color: #fafafa;
-background: #26262693;
-font-size: 140%;
+    clear: both;
+    text-align: center;
+    color: #fafafa;
+    background: #26262693;
+    font-size: 140%;
 }
 
 /* Media queries for medium and small screen sizes*/
@@ -192,6 +203,3 @@ font-size: 140%;
     }
 
 }
-
-
-

@@ -3,11 +3,11 @@ let inputField = document.getElementById("input-field");
 inputField.addEventListener("submit", handleSubmit);
 
 // Listens for the fahrenheit link for conversion execution
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
+let fahrenheitLink = document.getElementById("fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 // Listens for the celsius link to bring back default unit
-let celsiusLink = document.querySelector("#celsius-link");
+let celsiusLink = document.getElementById("celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 /**
@@ -252,7 +252,7 @@ function displayCelsiusTemperature(event) {
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
-// Defines celsius temperature as a global variable 
+// Defines celsius temperature as a global undefined variable 
 let celsiusTemperature;
 
 /* 
