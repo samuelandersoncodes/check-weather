@@ -119,6 +119,7 @@ The web application was opened on the following devices and no responsive issues
 - Asus Sonicmaster
 - Hp EliteBook 8440p
 - Hp laptop 14s
+- Mcbook Retina
 
 ### Accessibility
 
