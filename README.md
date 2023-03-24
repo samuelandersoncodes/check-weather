@@ -262,12 +262,13 @@ Steps to test:
 1. Navigate to [Check Weather](https://samuelandersoncodes.github.io/check-weather/)
 2. Click or tap on the fahrenheit link.
 3. The unit converts to fahrenheit correctly. 
-4. Click or tap the celsius link.
-5. The units returns to its default celsius unit.
+4. '°F' turns the same color as the temperature digit to highlight selected unit.
+5. Click or tap the celsius link.
+6. The unit returns to its default celsius unit and color.
 
 Expected:
 
-Celsius converts smoothly and correctly into fahrenheit upon a click or tap. Fahrenheit converts back to the default celsius unit upon a click or tap.
+Celsius converts smoothly and correctly into highlighted fahrenheit upon a click or tap. Fahrenheit converts back to the default celsius unit upon a click or tap.
 
 Actual:
 
